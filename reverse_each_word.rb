@@ -9,8 +9,7 @@
 
 def reverse_each_word(sentence)
   array = sentence.split(" ")
-  reverse_array = array.each {|w| w.reverse }
   reverse_sentence = ""
-  reverse_array.each {|w| reverse_sentence << (w + " ") } 
+  reverse_array = array.each {|w| w.reverse }
   reverse_sentence.chop
 end
