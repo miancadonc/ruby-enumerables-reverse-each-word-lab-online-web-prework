@@ -8,5 +8,6 @@
 #end
 
 def reverse_each_word(sentence)
-  
+  array = sentence.split(" ")
+  array.each {|w| w.reverse }
 end
